@@ -1,4 +1,4 @@
--- Versión PostgreSQL de empleados.sql (para Render)
+-- Versión PostgreSQL de empleados.sql
 -- La app la ejecuta sola la primera vez si las tablas no existen.
 
 CREATE TABLE IF NOT EXISTS empleados (

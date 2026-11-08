@@ -1,14 +1,11 @@
 <?php
 // Configuración de conexión a la base de datos
-// - En Render: usa la variable de entorno DATABASE_URL (PostgreSQL).
-// - En tu compu (XAMPP): si no existe DATABASE_URL, usa MySQL local.
 header("Content-Type: application/json; charset=UTF-8");
 
 $databaseUrl = getenv("DATABASE_URL");
 
 try {
     if ($databaseUrl) {
-        // Formato: postgresql://usuario:password@host:puerto/basedatos
         $url = parse_url($databaseUrl);
         $driver = "pgsql";
         $dsn = sprintf(

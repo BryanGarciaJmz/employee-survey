@@ -1,4 +1,3 @@
--- Base de datos: empleados_db / Generado a partir de empleados.xml /Incluye tabla de empleados y tabla de usuarios (para login/token)
 CREATE DATABASE IF NOT EXISTS empleados_db CHARACTER
 SET
     utf8mb4 COLLATE utf8mb4_spanish_ci;
@@ -97,7 +96,6 @@ CREATE TABLE
         fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
--- Usuario de prueba: usuario = admin / password = admin123 / (El hash se generó con password_hash('admin123', PASSWORD_BCRYPT) en PHP)
 INSERT INTO
     usuarios (usuario, password_hash)
 VALUES
