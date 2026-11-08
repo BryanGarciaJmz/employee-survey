@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #2c3e50;
+  margin: 0;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #1a2634;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #2980b9;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor h3 {
+  color: #1a2634;
+  margin-top: 0;
+}
+
+.contenedor > p {
+  color: #566573;
+  margin-bottom: 20px;
+}
+
+.tarjeta {
+  background-color: #f4f8fb;
+  border-left: 5px solid #3498db;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  color: #2980b9;
+}
+
+.resumen {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.resumen span {
+  color: #e67e22;
+  font-size: 18px;
+}
+
+table.dataTable {
+  width: 100% !important;
+  border-collapse: collapse;
+}
+
+table.dataTable thead th {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px;
+}
+
+table.dataTable tbody td {
+  padding: 8px 10px;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #f7f9fb;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #eaf2f8;
+}
+
+#btnInfo {
+  display: block;
+  margin: 10px auto 30px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#btnInfo:hover {
+  background-color: #2980b9;
+}
+
+/* Formulario de login */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  gap: 6px;
+}
+
+.form-login label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.form-login input {
+  padding: 8px 10px;
+  border: 1px solid #d5dbdb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-login button {
+  margin-top: 16px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-login button:hover {
+  background-color: #2980b9;
+}
+
+.mensaje-error {
+  color: #c0392b;
+  font-size: 13px;
+  margin-top: 8px;
+  display: block;
+  text-align: center;
+}
+
+/* Acciones de la tabla (nuevo / logout) */
+.acciones-tabla {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.acciones-tabla button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.acciones-tabla button:hover {
+  background-color: #2980b9;
+}
+
+#btnLogout {
+  background-color: #e74c3c !important;
+}
+
+#btnLogout:hover {
+  background-color: #c0392b !important;
+}
+
+/* Botones de la columna de acciones en la tabla */
+.btn-editar,
+.btn-eliminar {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.btn-editar {
+  background-color: #f39c12;
+}
+
+.btn-editar:hover {
+  background-color: #d68910;
+}
+
+.btn-eliminar {
+  background-color: #e74c3c;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
+
+/* Formulario del modal empleado */
+#formEmpleado {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#formEmpleado label {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+#formEmpleado input {
+  padding: 7px 9px;
+  border: 1px solid #d5dbdb;
+  border-radius: 5px;
+}
+
+#dialogo p {
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+footer {
+  max-width: 450px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 14px;
+  color: #7f8c8d;
+  border-top: 1px solid #d5dbdb;
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 4px 0;
+}

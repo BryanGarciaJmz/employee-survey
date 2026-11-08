@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empleados>
+
+    <empleado>
+        <id>1</id>
+        <nombre>Joel Mejia</nombre>
+        <departamento>Calidad</departamento>
+        <puesto>Ingeniero</puesto>
+        <salario>25000</salario>
+    </empleado>
+
+    <empleado>
+        <id>2</id>
+        <nombre>Edgardo García</nombre>
+        <departamento>Produccion</departamento>
+        <puesto>Supervisor</puesto>
+        <salario>22000</salario>
+    </empleado>
+
+    <empleado>
+        <id>3</id>
+        <nombre>Miguel Navarro</nombre>
+        <departamento>Ingenieria</departamento>
+        <puesto>Tecnico</puesto>
+        <salario>18000</salario>
+    </empleado>
+
+    <empleado>
+        <id>4</id>
+        <nombre>Maria Gonzalez</nombre>
+        <departamento>Recursos Humanos</departamento>
+        <puesto>Coordinador</puesto>
+        <salario>24000</salario>
+    </empleado>
+
+    <empleado>
+        <id>5</id>
+        <nombre>Pedro Sanchez</nombre>
+        <departamento>Calidad</departamento>
+        <puesto>Inspector</puesto>
+        <salario>16000</salario>
+    </empleado>
+
+    <empleado>
+        <id>6</id>
+        <nombre>Laura Hernandez</nombre>
+        <departamento>Ingenieria</departamento>
+        <puesto>Ingeniero</puesto>
+        <salario>28000</salario>
+    </empleado>
+
+    <empleado>
+        <id>7</id>
+        <nombre>Jorge Torres</nombre>
+        <departamento>Produccion</departamento>
+        <puesto>Operador</puesto>
+        <salario>14000</salario>
+    </empleado>
+
+    <empleado>
+        <id>8</id>
+        <nombre>Sofia Morales</nombre>
+        <departamento>Calidad</departamento>
+        <puesto>Auditor</puesto>
+        <salario>26000</salario>
+    </empleado>
+
+    <empleado>
+        <id>9</id>
+        <nombre>Daniel Flores</nombre>
+        <departamento>Logistica</departamento>
+        <puesto>Analista</puesto>
+        <salario>21000</salario>
+    </empleado>
+
+    <empleado>
+        <id>10</id>
+        <nombre>Elena Castro</nombre>
+        <departamento>Finanzas</departamento>
+        <puesto>Contador</puesto>
+        <salario>27000</salario>
+    </empleado>
+
+    <empleado>
+        <id>11</id>
+        <nombre>Ricardo Vega</nombre>
+        <departamento>Produccion</departamento>
+        <puesto>Supervisor</puesto>
+        <salario>23000</salario>
+    </empleado>
+
+    <empleado>
+        <id>12</id>
+        <nombre>Fernanda Ruiz</nombre>
+        <departamento>Calidad</departamento>
+        <puesto>Ingeniero</puesto>
+        <salario>29000</salario>
+    </empleado>
+
+</empleados>

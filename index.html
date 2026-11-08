@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Conceptualización de servicios en la nube</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>3.3 Aplicación web con base de datos</h1>
+    <h2>Sistema de consulta de empleados</h2>
+
+    <div class="contenedor" id="contenedorLogin">
+      <h3>Iniciar sesión</h3>
+      <p>
+        Ingresa tus credenciales para acceder a la información de empleados.
+      </p>
+      <form id="formLogin" class="form-login">
+        <label for="loginUsuario">Usuario</label>
+        <input
+          type="text"
+          id="loginUsuario"
+          name="usuario"
+          autocomplete="username"
+          required
+        />
+
+        <label for="loginPassword">Contraseña</label>
+        <input
+          type="password"
+          id="loginPassword"
+          name="password"
+          autocomplete="current-password"
+          required
+        />
+
+        <button type="submit" id="btnLogin">Entrar</button>
+        <span id="loginError" class="mensaje-error"></span>
+      </form>
+    </div>
+
+    <div class="contenedor" id="contenedorEmpleados" style="display: none">
+      <h3>Consulta de empleados</h3>
+      
+      <div class="tarjeta">
+        <h3>Registro de empleados</h3>
+        <div class="resumen">
+          Total de registros:
+          <span id="totalRegistros">0</span>
+        </div>
+        <div class="acciones-tabla">
+          <button id="btnNuevo">+ Agregar empleado</button>
+          <button id="btnLogout">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <table id="tablaEmpleados" class="display">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Departamento</th>
+            <th>Puesto</th>
+            <th>Salario</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <button id="btnInfo">Información del sistema</button>
+
+    <div id="dialogo" title="Información del proyecto" style="display: none">
+      <p>
+        Este sistema permite la consulta y gestión de empleados mediante
+        transferencias asíncronas (AJAX) protegidas por token de autorización.
+      </p>
+    </div>
+
+    <div id="dialogoForm" title="Empleado" style="display: none">
+      <form id="formEmpleado">
+        <input type="hidden" id="empId" />
+
+        <label for="empNombre">Nombre</label>
+        <input type="text" id="empNombre" required />
+
+        <label for="empDepartamento">Departamento</label>
+        <input type="text" id="empDepartamento" required />
+
+        <label for="empPuesto">Puesto</label>
+        <input type="text" id="empPuesto" required />
+
+        <label for="empSalario">Salario</label>
+        <input type="number" id="empSalario" min="0" step="0.01" required />
+      </form>
+    </div>
+
+    <footer>
+      <p><strong>Nombre del alumno:</strong> Bryan Josafat García Jiménez</p>
+      <p><strong>Materia:</strong> Conceptualización de servicios en la nube</p>
+      <p><strong>Unidad 3:</strong> Desarrollo de aplicaciones web en los servicios de la nube</p>
+      <p><strong>Licenciatura en Desarrollo de Sistemas Web</strong></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
